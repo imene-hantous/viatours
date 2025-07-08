@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --orange: #eb662b;
+  --blue: #05073c;
+  --black: #000000;
+  --white: #fff;
+  --gray: #717171;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+section {
+  padding: 2rem 0;
+}
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+.navbar-tours li a {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 400;
+}
+.nav-link.active,
+.navbar-tours li a:hover {
+  color: var(--orange);
+}
+
+.button-log {
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 18px;
+}
+
+.button-log:hover {
+  color: var(--orange) !important;
+  background-color: var(--white);
+  border: 1px solid var(--orange);
+}
+
+
+ .logo-side .form-control:hover {
+  border-color: var(--orange);
+}
+/* banner */
+.carousel-caption {
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  color: white;
+  z-index: 10;
+}
+
+.carousel-caption h1 {
+  font-size: 69px;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.banner .reservation-form {
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  margin-top: -150px;
+}
+
+
+
+ .banner .btn-search  a {
+
+  display: block;
+  line-height: 54px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid var(--orange);
+   color: var(--orange);
+  font-size: 18px;
+ font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: all .35s;
+ }
+
+
+
+
+.banner .btn-search  a::before,
+.banner .btn-search  a:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: var(--orange);
+  z-index: -1;
+  transition: all .35s;
+}
+.banner .btn-search  a:before{
+  opacity: .5;
+}
+
+.banner .btn-search  a:after{
+  transition-delay: .2s;
+}
+
+.banner .btn-search  a:hover{
+  color: #fff;
+}
+
+.banner .btn-search  a:hover:before,
+.banner .btn-search  a:hover:after{
+  top: 0;
+}
+.banner .form-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--blue);
+}
+.banner .input-tours:hover .form-label{
+  color: var(--orange);
+}
+
+
+/*section 1 */
+
+.title-tours p {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card-whyUs h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue);
+}
+.card-whyUs p {
+  font-size: 15px;
+  color: var(--blue);
+
+
+  
+}
+
+.why-us  .card:hover svg {
+  transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+/*section 2 */
+.title-tours a {
+    color: var(--blue);
+    position: relative;
+    padding: 15px 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title-tours a::after,
+.title-tours a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue);
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+}
+
+.title-tours a:hover::before {
+    top: 0;
+    transform: scale(1);
+}
+
+.title-tours a:hover::after {
+    transform: scale(1);
+}
+
+
+
+
+.card-content h3 {
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: var(--blue);
+}
+
+.destination-trend img {
+  overflow: hidden;
+  
+}
+
+.destination-trend .item:hover img{
+  transform: scale(1.02);
+  transition: all .3s;
+
+}
+
+
+/*dots carousel */
+.owl-theme .owl-dots .owl-dot.active span {
+  background: black;
+  width: 20px;
+  height: 8px;
+}
+
+.owl-carousel .owl-dots.disabled {
+  display: block;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px 3px;
+  background: black;
+  display: block;
+}
+
+/*section 3 */
+.border-tours {
+  border: 1px solid #e7e6e6;
+  border-radius: 12px;
+}
+
+ .border-tours:hover{
+   border: 1px solid var(--orange);
+}
+
+.card-tours:hover .amount , .card-tours:hover .info {
+  color: var(--orange);
+}
+.vr-card {
+  border-top: 1px solid #e7e6e6;
+  opacity: 1;
+  background-color: transparent;
+}
+.location-tours {
+  font-size: 14px;
+  color: var(--gray);
+}
+.card-titleTours {
+  color: var(--blue);
+  font-family: 16px;
+  line-height: 1.6;
+}
+.amount {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.info {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.promo-tours {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: bold;
+  width: 60%;
+  line-height: 1.3;
+}
+.promo-tours span {
+  color: var(--orange);
+}
+
+.promotion p {
+  color: var(--blue);
+  font-size: 15px;
+}
+
+.btn-promotion {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 2px solid transparent; 
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; 
+  transition: all 0.35s;
+}
+
+.btn-promotion::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1; 
+  transition: all 0.35s;
+}
+
+.btn-promotion:hover {
+  color: var(--orange); 
+  border-color: var(--orange);
+}
+
+.btn-promotion:hover::before {
+  top: 0;
+}
+
+
+.owl-carousel .owl-item img{
+  overflow: hidden;
+}
+
+.card-tours:hover  img{
+      transform: scale(1.02);
+    transition: all .3s;
+}
+
+/*section */
+
+.img-voyage {
+  height: 100%;
+  border-radius: 12px;
+ 
+}
+
+.img-1 {
+  height: 40%;
+}
+
+.img-2 {
+  height: 60%;
+}
+
+.things-toDo img:hover {
+     transform: scale(1.02);
+    transition: all .3s;
+}
+
+/*section */
+
+.trending .bg-trending {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+
+
+.trending .owl-carousel .owl-nav.disabled {
+  margin-top: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+
+.trending .owl-theme .owl-nav [class*=owl-] {
+
+    color: var(--blue);
+    padding: 10px 13px;
+    background: white;
+    border-radius: 50%;
+
+}
+
+/*section */
+
+#review:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.review {
+  background-image: url(/assets/images/bg-review.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review .owl-carousel .owl-item img {
+  width: 80px;
+}
+
+
+
+.newsletter .container{
+   background-image: url(/assets/images/nwesletter.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+
+
+.newsletter .left-side {
+  color: var(--white);
+}
+
+.input-nwesletter input {
+  border-radius: 12px !important;
+  padding: 11px;
+}
+
+.input-nwesletter input:hover , .input-nwesletter input:active {
+  border: 2px solid var(--orange);
+}
+
+.input-nwesletter button {
+  background-color: white;
+  padding: 11px 25px;
+  border-radius: 12px;
+}
+
+.input-nwesletter button:hover{
+  background-color: var(--orange);
+  color: white;
+}
+
+
+.card-image .badge {
+  top: 15px;
+  left: 15px;
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: black;
+  font-weight: 400;
+}
+
+.card-tours:hover .card-image .badge {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+
+
+.visatours-footer{
+  background-image: url(/assets/images/bg.svg\ fill.png);
+background-position: top;
+  background-repeat: no-repeat;
+}
+
+.visatours-footer .title-box{
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+
+.visatours-footer .list-unstyled li a {
+    color: var(--blue);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+.visatours-footer .infoline {
+  border-bottom: 1px solid #fbe1d6;
+ 
+}
+
+.visatours-footer .infoline span {
+  color: var(--orange);
+}
+
+.visatours-footer .infoline a {
+  color: var(--blue);
+}
+
+
+
+
+
+
+.wrapper .subcribe-form form {
+    max-width: 450px;
+    margin: 15px auto;
+    position: relative
+}
+
+.wrapper .subcribe-form #subscribe input {
+    width: 100%;
+    font-size: 14px;
+    height: 48px;
+    background: white;
+    border: 1px solid #E7E6E6;
+    border-radius: 12px;
+    padding: 0 30px;
+   
+}
+.wrapper .subcribe-form #subscribe #subscribe-button {
+  border: none;
+  position: absolute;
+  right: 6px;
+  top: 14px;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer
+}
+
+
+@media (max-width: 1024px) {
+
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+
+
+}
+
+@media(max-width:991.9px) {
+  .banner .reservation-form {
+    background-color: #fef7f4;
+    margin-top: 0;
+  }
+
+  .input-tours{
+    background-color: var(--white);
+    margin: 10px 0;
+
+  }
+  .banner .btn-search a{
+    border-radius: 4px;
+  }
+
+}
+
+/* Mobile breakpoint */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-collapse.show {
+    max-height: 100vh;
+    overflow: visible;
+  }
+
+  .navbar-tours {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px ;
+    justify-content: space-between;
+  }
+
+  
+
+
+
+  .nav-toggler {
+    display: block;
+    border: 2px solid var(--orange);
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+  }
+
+  .nav-toggler span,
+  .nav-toggler span:before,
+  .nav-toggler span:after {
+    width: 28px;
+    height: 2px;
+    background-color: var(--orange);
+    display: block;
+    transition: 0.3s;
+  }
+
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .logo-side {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+}
